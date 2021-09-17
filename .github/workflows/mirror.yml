@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@main
-      - uses: jhnc-oss/git-mirror-action@stricthostkeychecking
+      - uses: jhnc-oss/git-mirror-action@master
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_KNOWN_HOSTS: "${{ secrets.SSH_KNOWN_HOSTS }}"
