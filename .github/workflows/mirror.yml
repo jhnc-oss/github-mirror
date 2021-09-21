@@ -10,16 +10,21 @@ concurrency:
   group: github-mirror
 
 jobs:
-  mirror-yocto-meta-selinux:
+  mirror-repos:
     runs-on: ubuntu-latest
-    name: yocto/meta-selinux
+    strategy:
+      matrix:
+        mirror_config:
+          - { src_repo: "https://git.yoctoproject.org/git/meta-selinux.git", dest_repo: "meta-selinux", key_id: 'META_SELINUX' }
+          - { src_repo: "https://git.yoctoproject.org/git/meta-mingw.git", dest_repo: "meta-mingw", key_id: 'META_MINGW' }
+    name: ${{ matrix.mirror_config.dest_repo }}
     steps:
       - name: Checkout
         uses: actions/checkout@main
       - uses: jhnc-oss/git-mirror-action@master
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets[format('SSH_PRIVATE_KEY_{0}', matrix.mirror_config.key_id)] }}
           SSH_KNOWN_HOSTS: "${{ secrets.SSH_KNOWN_HOSTS }}"
         with:
-          source-repo: "https://git.yoctoproject.org/git/meta-selinux.git"
-          destination-repo: "git@github.com:jhnc-oss/meta-selinux.git"
+          source-repo: ${{ matrix.mirror_config.src_repo }}
+          destination-repo: "git@github.com:jhnc-oss/${{ matrix.mirror_config.dest_repo }}.git"
