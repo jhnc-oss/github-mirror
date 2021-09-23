@@ -15,8 +15,9 @@ jobs:
     strategy:
       matrix:
         mirror_config:
-          - { src_repo: "https://git.yoctoproject.org/git/meta-selinux.git", dest_repo: "meta-selinux", key_id: 'META_SELINUX' }
+          - { src_repo: "https://github.com/openembedded/meta-openembedded.git", dest_repo: "meta-openembedded", key_id: 'META_OPENEMBEDDED' }
           - { src_repo: "https://git.yoctoproject.org/git/meta-mingw.git", dest_repo: "meta-mingw", key_id: 'META_MINGW' }
+          - { src_repo: "https://git.yoctoproject.org/git/meta-selinux.git", dest_repo: "meta-selinux", key_id: 'META_SELINUX' }
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
       - name: Checkout
