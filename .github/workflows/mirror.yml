@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@main
-      - uses: jhnc-oss/git-mirror-action@dir_name
+      - uses: wearerequired/git-mirror-action@master
         env:
           SSH_PRIVATE_KEY: ${{ secrets[format('SSH_PRIVATE_KEY_{0}', matrix.mirror_config.key_id)] }}
           SSH_KNOWN_HOSTS: "${{ secrets.SSH_KNOWN_HOSTS }}"
