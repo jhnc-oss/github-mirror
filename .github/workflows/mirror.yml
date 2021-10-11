@@ -18,11 +18,12 @@ jobs:
           - { src_repo: "https://github.com/openembedded/meta-openembedded.git", dest_repo: "meta-openembedded", key_id: 'META_OPENEMBEDDED' }
           - { src_repo: "https://git.yoctoproject.org/git/meta-mingw.git", dest_repo: "meta-mingw", key_id: 'META_MINGW' }
           - { src_repo: "https://git.yoctoproject.org/git/meta-selinux.git", dest_repo: "meta-selinux", key_id: 'META_SELINUX' }
+          - { src_repo: "https://git.openembedded.org/meta-python2", dest_repo: "meta-python2", key_id: 'META_PYTHON2' }
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
       - name: Checkout
         uses: actions/checkout@main
-      - uses: jhnc-oss/git-mirror-action@master
+      - uses: jhnc-oss/git-mirror-action@dir_name
         env:
           SSH_PRIVATE_KEY: ${{ secrets[format('SSH_PRIVATE_KEY_{0}', matrix.mirror_config.key_id)] }}
           SSH_KNOWN_HOSTS: "${{ secrets.SSH_KNOWN_HOSTS }}"
