@@ -12,7 +12,7 @@ Mirrors repositories to GitHub.
    - Add the *private* key as a new secret to this project (`SSH_PRIVATE_KEY_<Repo ID>`, all uppercase)
    - Add the *public* key as *writeable* deployment key `github-mirror` to the destination repository
 3. **Add configuration** to [`mirror.yml`](./.github/workflows/mirror.yml)
-4. *(Optional)* Set default branch of the destination repository according to upstream
+4. **Set default branch** of the destination repository according to upstream
 
 ```yml
 mirror_config:
