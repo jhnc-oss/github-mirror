@@ -16,6 +16,7 @@ jobs:
       matrix:
         mirror_config:
           - { src_repo: "https://github.com/kraj/meta-clang.git", dest_repo: "meta-clang", key_id: 'META_CLANG' }
+          - { src_repo: "https://github.com/openembedded/openembedded-core.git", dest_repo: "openembedded-core", key_id: 'OPENEMBEDDED' }
           - { src_repo: "https://github.com/openembedded/meta-openembedded.git", dest_repo: "meta-openembedded", key_id: 'META_OPENEMBEDDED' }
           - { src_repo: "https://git.yoctoproject.org/git/meta-mingw.git", dest_repo: "meta-mingw", key_id: 'META_MINGW' }
           - { src_repo: "https://git.yoctoproject.org/git/meta-selinux.git", dest_repo: "meta-selinux", key_id: 'META_SELINUX' }
