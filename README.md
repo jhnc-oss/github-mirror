@@ -16,6 +16,10 @@ Mirrors repositories to GitHub.
 
 ```yml
 mirror_config:
-    - { src_repo: "<Upstream Git URL>", dest_repo: "<Destination Repo Name>", key_id: '<Repo ID>' }
+    - {
+        src_repo: "<Upstream Git URL>",
+        dest_repo: "<Destination Repo Name>",
+        key_id: "<Repo ID>",
+    }
     - ...
 ```
