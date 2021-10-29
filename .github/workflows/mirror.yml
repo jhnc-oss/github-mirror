@@ -1,10 +1,10 @@
 name: mirror
 
-on: 
+on:
   push:
   pull_request:
   schedule:
-    - cron: '0 11 * * *'
+    - cron: "0 11 * * *"
 
 concurrency:
   group: github-mirror
@@ -15,13 +15,41 @@ jobs:
     strategy:
       matrix:
         mirror_config:
-          - { src_repo: "https://github.com/kraj/meta-clang.git", dest_repo: "meta-clang", key_id: 'META_CLANG' }
-          - { src_repo: "https://github.com/openembedded/openembedded-core.git", dest_repo: "openembedded-core", key_id: 'OPENEMBEDDED' }
-          - { src_repo: "https://github.com/openembedded/meta-openembedded.git", dest_repo: "meta-openembedded", key_id: 'META_OPENEMBEDDED' }
-          - { src_repo: "https://git.yoctoproject.org/git/meta-mingw.git", dest_repo: "meta-mingw", key_id: 'META_MINGW' }
-          - { src_repo: "https://git.yoctoproject.org/git/meta-selinux.git", dest_repo: "meta-selinux", key_id: 'META_SELINUX' }
-          - { src_repo: "https://git.yoctoproject.org/git/poky.git", dest_repo: "poky", key_id: 'POKY' }
-          - { src_repo: "https://git.openembedded.org/meta-python2", dest_repo: "meta-python2", key_id: 'META_PYTHON2' }
+          - {
+              src_repo: "https://github.com/kraj/meta-clang.git",
+              dest_repo: "meta-clang",
+              key_id: "META_CLANG",
+            }
+          - {
+              src_repo: "https://github.com/openembedded/openembedded-core.git",
+              dest_repo: "openembedded-core",
+              key_id: "OPENEMBEDDED",
+            }
+          - {
+              src_repo: "https://github.com/openembedded/meta-openembedded.git",
+              dest_repo: "meta-openembedded",
+              key_id: "META_OPENEMBEDDED",
+            }
+          - {
+              src_repo: "https://git.yoctoproject.org/git/meta-mingw.git",
+              dest_repo: "meta-mingw",
+              key_id: "META_MINGW",
+            }
+          - {
+              src_repo: "https://git.yoctoproject.org/git/meta-selinux.git",
+              dest_repo: "meta-selinux",
+              key_id: "META_SELINUX",
+            }
+          - {
+              src_repo: "https://git.yoctoproject.org/git/poky.git",
+              dest_repo: "poky",
+              key_id: "POKY",
+            }
+          - {
+              src_repo: "https://git.openembedded.org/meta-python2",
+              dest_repo: "meta-python2",
+              key_id: "META_PYTHON2",
+            }
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
       - name: Checkout
