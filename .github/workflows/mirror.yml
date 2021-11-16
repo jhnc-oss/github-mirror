@@ -61,3 +61,4 @@ jobs:
         with:
           source-repo: ${{ matrix.mirror_config.src_repo }}
           destination-repo: "git@github.com:jhnc-oss/${{ matrix.mirror_config.dest_repo }}.git"
+          dry-run: ${{ github.ref != 'refs/heads/main' }}
