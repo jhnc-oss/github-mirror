@@ -50,6 +50,11 @@ jobs:
               dest_repo: "meta-python2",
               key_id: "META_PYTHON2",
             }
+          - {
+              src_repo: "https://github.com/vmware/vsphere-automation-sdk-python.git",
+              dest_repo: "vsphere-automation-sdk-python",
+              key_id: "VSPHERE_AUTOMATION_SDK_PYTHON",
+            }
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
       - name: Checkout
