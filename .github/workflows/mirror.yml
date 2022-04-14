@@ -60,6 +60,11 @@ jobs:
               dest_repo: "graphical-debugging-vscode",
               key_id: "GRAPHICAL_DEBUGGING_VSCODE",
             }
+          - {
+              src_repo: "https://github.com/mneuroth/SciTEQt",
+              dest_repo: "SciTEQt",
+              key_id: "SCITEQT",
+            }
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
       - name: Checkout
