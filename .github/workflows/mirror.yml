@@ -65,6 +65,12 @@ jobs:
               dest_repo: "SciTEQt",
               key_id: "SCITEQT",
             }
+          - {
+              src_repo: "https://github.com/parkouss/funq.git",
+              dest_repo: "funq",
+              key_id: "FUNQ",
+            }
+
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
       - name: Checkout
