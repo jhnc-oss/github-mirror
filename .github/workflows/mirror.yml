@@ -70,6 +70,11 @@ jobs:
               dest_repo: "funq",
               key_id: "FUNQ",
             }
+          - {
+              src_repo: "https://github.com/FreeOpcUa/python-opcua.git",
+              dest_repo: "python-opcua",
+              key_id: "PYTHON_OPCUA",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
