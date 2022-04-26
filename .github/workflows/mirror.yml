@@ -75,6 +75,11 @@ jobs:
               dest_repo: "python-opcua",
               key_id: "PYTHON_OPCUA",
             }
+          - {
+              src_repo: "https://github.com/danmar/cppcheck",
+              dest_repo: "cppcheck",
+              key_id: "CPPCHECK",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
