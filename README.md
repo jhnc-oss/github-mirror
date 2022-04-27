@@ -9,7 +9,7 @@ Mirrors repositories to GitHub.
 
 :warning: *All branches which aren't in the upstream repository are lost*.
 
-1. Create an **empty destination repository**, same name as upstream is recommended
+1. Create a **fork** (if on GitHub) or an **empty destination repository**, same name as upstream is recommended
 2. **Generate SSH keys**: `ssh-keygen -t ed25519 -C github-mirror`
    - Add the *private* key as a new secret to this project (`SSH_PRIVATE_KEY_<Repo ID>`, all uppercase)
    - Add the *public* key as *writeable* deployment key `github-mirror` to the destination repository
