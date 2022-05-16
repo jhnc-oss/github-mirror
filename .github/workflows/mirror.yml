@@ -80,6 +80,11 @@ jobs:
               dest_repo: "cppcheck",
               key_id: "CPPCHECK",
             }
+          - {
+              src_repo: "https://github.com/meta-rust/meta-rust",
+              dest_repo: "meta-rust",
+              key_id: "META_RUST",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
