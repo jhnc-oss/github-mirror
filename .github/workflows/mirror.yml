@@ -85,6 +85,11 @@ jobs:
               dest_repo: "meta-rust",
               key_id: "META_RUST",
             }
+          - {
+              src_repo: "https://git.yoctoproject.org/git/meta-raspberrypi.git",
+              dest_repo: "meta-raspberrypi",
+              key_id: "META_RASPBERRYPI",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
