@@ -90,6 +90,11 @@ jobs:
               dest_repo: "meta-raspberrypi",
               key_id: "META_RASPBERRYPI",
             }
+          - {
+              src_repo: "https://github.com/FreeOpcUa/opcua-asyncio.git",
+              dest_repo: "opcua-asyncio",
+              key_id: "OPCUA_ASYNCIO",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
