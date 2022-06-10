@@ -95,6 +95,11 @@ jobs:
               dest_repo: "opcua-asyncio",
               key_id: "OPCUA_ASYNCIO",
             }
+          - {
+              src_repo: "https://sourceware.org/git/glibc.git",
+              dest_repo: "glibc",
+              key_id: "GLIBC",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
