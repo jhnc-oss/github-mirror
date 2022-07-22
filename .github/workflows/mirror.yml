@@ -100,6 +100,11 @@ jobs:
               dest_repo: "glibc",
               key_id: "GLIBC",
             }
+          - {
+              src_repo: "https://github.com/msys2/MINGW-packages.git",
+              dest_repo: "MINGW-packages",
+              key_id: "MINGW_PACKAGES",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
