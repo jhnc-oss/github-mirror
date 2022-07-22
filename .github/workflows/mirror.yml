@@ -105,6 +105,16 @@ jobs:
               dest_repo: "MINGW-packages",
               key_id: "MINGW_PACKAGES",
             }
+          - {
+              src_repo: "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
+              dest_repo: "NetworkManager",
+              key_id: "NETWORKMANAGER",
+            }
+          - {
+              src_repo: "https://gitlab.gnome.org/GNOME/network-manager-applet.git",
+              dest_repo: "network-manager-applet",
+              key_id: "NETWORK_MANAGER_APPLET",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
