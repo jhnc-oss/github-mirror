@@ -115,6 +115,11 @@ jobs:
               dest_repo: "network-manager-applet",
               key_id: "NETWORK_MANAGER_APPLET",
             }
+          - {
+              src_repo: "https://gitlab.freedesktop.org/plymouth/plymouth",
+              dest_repo: "plymouth",
+              key_id: "PLYMOUTH",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
