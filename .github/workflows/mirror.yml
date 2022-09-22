@@ -125,6 +125,11 @@ jobs:
               dest_repo: "meta-intel",
               key_id: "META_INTEL",
             }
+          - {
+              src_repo: "https://github.com/conan-io/meta-conan.git",
+              dest_repo: "meta-conan",
+              key_id: "META_CONAN",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
