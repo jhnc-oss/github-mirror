@@ -120,6 +120,11 @@ jobs:
               dest_repo: "plymouth",
               key_id: "PLYMOUTH",
             }
+          - {
+              src_repo: "https://git.yoctoproject.org/git/meta-intel.git",
+              dest_repo: "meta-intel",
+              key_id: "META_INTEL",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
