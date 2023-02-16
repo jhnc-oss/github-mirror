@@ -130,6 +130,16 @@ jobs:
               dest_repo: "meta-conan",
               key_id: "META_CONAN",
             }
+          - {
+              src_repo: "https://github.com/Freescale/meta-freescale-distro.git",
+              dest_repo: "meta-freescale-distro",
+              key_id: "META_FREESCALE_DISTRO",
+            }
+          - {
+              src_repo: "https://github.com/Freescale/meta-freescale.git",
+              dest_repo: "meta-freescale",
+              key_id: "META_FREESCALE",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
