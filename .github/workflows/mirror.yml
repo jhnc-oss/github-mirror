@@ -140,6 +140,11 @@ jobs:
               dest_repo: "meta-freescale",
               key_id: "META_FREESCALE",
             }
+          - {
+              src_repo: "https://github.com/rust-lang/crates.io-index.git",
+              dest_repo: "crates.io-index",
+              key_id: "CRATESIO_INDEX",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
