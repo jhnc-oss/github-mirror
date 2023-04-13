@@ -145,6 +145,11 @@ jobs:
               dest_repo: "crates.io-index",
               key_id: "CRATESIO_INDEX",
             }
+          - {
+              src_repo: "https://invent.kde.org/packaging/yocto-meta-kf5.git",
+              dest_repo: "yocto-meta-kf5",
+              key_id: "YOCTO_META_KF5",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
