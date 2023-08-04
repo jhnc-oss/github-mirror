@@ -155,6 +155,11 @@ jobs:
               dest_repo: "QuickScintilla",
               key_id: "QUICKSCINTILLA",
             }
+          - {
+              src_repo: "https://git.yoctoproject.org/git/meta-security.git",
+              dest_repo: "meta-security",
+              key_id: "META_SECURITY",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
