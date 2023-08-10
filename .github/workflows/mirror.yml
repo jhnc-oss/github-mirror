@@ -160,6 +160,11 @@ jobs:
               dest_repo: "meta-security",
               key_id: "META_SECURITY",
             }
+          - {
+              src_repo: "https://github.com/nxp-imx/meta-imx.git",
+              dest_repo: "meta-imx",
+              key_id: "META_IMX",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
