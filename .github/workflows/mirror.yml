@@ -170,6 +170,11 @@ jobs:
               dest_repo: "meta-nxp-demo-experience",
               key_id: "META_NXP_DEMO_EXPERIENCE",
             }
+          - {
+              src_repo: "https://code.qt.io/yocto/meta-qt6.git",
+              dest_repo: "meta-qt6",
+              key_id: "META_QT6",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
