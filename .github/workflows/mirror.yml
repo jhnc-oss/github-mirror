@@ -175,6 +175,11 @@ jobs:
               dest_repo: "meta-qt6",
               key_id: "META_QT6",
             }
+          - {
+              src_repo: "https://github.com/Freescale/meta-freescale-3rdparty.git",
+              dest_repo: "meta-freescale-3rdparty",
+              key_id: "META_FREESCALE_3RDPARTY",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
