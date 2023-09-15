@@ -191,6 +191,11 @@ jobs:
               dest_repo: "meta-freescale-3rdparty",
               key_id: "META_FREESCALE_3RDPARTY",
             }
+          - {
+              src_repo: "https://github.com/PowerShell/openssh-portable.git",
+              dest_repo: "openssh-portable",
+              key_id: "OPENSSH_PORTABLE",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
