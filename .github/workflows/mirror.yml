@@ -151,6 +151,11 @@ jobs:
               key_id: "YOCTO_META_KF5",
             }
           - {
+              src_repo: "https://github.com/jhnc-oss/yocto-meta-kf6.git",
+              dest_repo: "yocto-meta-kf6",
+              key_id: "YOCTO_META_KF6",
+            }
+          - {
               src_repo: "https://github.com/mneuroth/QuickScintilla.git",
               dest_repo: "QuickScintilla",
               key_id: "QUICKSCINTILLA",
