@@ -206,6 +206,11 @@ jobs:
               dest_repo: "networkmanager-qt",
               key_id: "NETWORKMANAGER_QT",
             }
+          - {
+              src_repo: "https://github.com/intel/linux-intel-lts.git",
+              dest_repo: "linux-intel-lts",
+              key_id: "LINUX_INTEL_LTS",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
