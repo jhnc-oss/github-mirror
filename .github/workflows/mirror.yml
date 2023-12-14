@@ -201,6 +201,11 @@ jobs:
               dest_repo: "openssh-portable",
               key_id: "OPENSSH_PORTABLE",
             }
+          - {
+              src_repo: "https://github.com/KDE/networkmanager-qt.git",
+              dest_repo: "networkmanager-qt",
+              key_id: "NETWORKMANAGER_QT",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
