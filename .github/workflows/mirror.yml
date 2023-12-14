@@ -201,6 +201,11 @@ jobs:
               dest_repo: "openssh-portable",
               key_id: "OPENSSH_PORTABLE",
             }
+          - {
+              src_repo: "https://github.com/jhnc-oss/linux-intel-lts.git",
+              dest_repo: "linux-intel-lts",
+              key_id: "LINUX_INTEL_LTS",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
