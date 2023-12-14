@@ -202,7 +202,7 @@ jobs:
               key_id: "OPENSSH_PORTABLE",
             }
           - {
-              src_repo: "https://github.com/jhnc-oss/networkmanager-qt.git",
+              src_repo: "https://github.com/KDE/networkmanager-qt.git",
               dest_repo: "networkmanager-qt",
               key_id: "NETWORKMANAGER_QT",
             }
