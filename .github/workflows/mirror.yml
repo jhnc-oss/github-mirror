@@ -202,7 +202,7 @@ jobs:
               key_id: "OPENSSH_PORTABLE",
             }
           - {
-              src_repo: "https://github.com/jhnc-oss/linux-intel-lts.git",
+              src_repo: "https://github.com/intel/linux-intel-lts.git",
               dest_repo: "linux-intel-lts",
               key_id: "LINUX_INTEL_LTS",
             }
