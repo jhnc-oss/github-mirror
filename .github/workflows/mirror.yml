@@ -211,6 +211,11 @@ jobs:
               dest_repo: "linux-intel-lts",
               key_id: "LINUX_INTEL_LTS",
             }
+          - {
+              src_repo: "https://github.com/rustsec/advisory-db.git",
+              dest_repo: "advisory-db",
+              key_id: "ADVISORY_DB",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
