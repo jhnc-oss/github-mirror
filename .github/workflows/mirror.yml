@@ -170,12 +170,6 @@ jobs:
               dest_repo: "yocto-kernel-cache",
               key_id: "YOCTO_KERNEL_CACHE",
             }
-            # Broken sync (#77)
-          # - {
-          #     src_repo: "https://git.yoctoproject.org/linux-yocto.git",
-          #     dest_repo: "linux-yocto",
-          #     key_id: "LINUX_YOCTO",
-          #   }
           - {
               src_repo: "https://github.com/nxp-imx/meta-imx.git",
               dest_repo: "meta-imx",
