@@ -211,6 +211,11 @@ jobs:
               dest_repo: "advisory-db",
               key_id: "ADVISORY_DB",
             }
+          - {
+              src_repo: "https://git.yoctoproject.org/meta-virtualization",
+              dest_repo: "meta-virtualization",
+              key_id: "META_VIRTUALIZATION",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
