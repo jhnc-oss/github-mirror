@@ -216,6 +216,11 @@ jobs:
               dest_repo: "meta-virtualization",
               key_id: "META_VIRTUALIZATION",
             }
+          - {
+              src_repo: "https://github.com/OSSystems/meta-browser.git",
+              dest_repo: "meta-browser",
+              key_id: "META_BROWSER",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
