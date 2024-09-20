@@ -221,6 +221,11 @@ jobs:
               dest_repo: "meta-browser",
               key_id: "META_BROWSER",
             }
+          - {
+              src_repo: "https://github.com/ashie/meta-inputmethod.git",
+              dest_repo: "meta-inputmethod",
+              key_id: "META_INPUTMETHOD",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
