@@ -226,6 +226,11 @@ jobs:
               dest_repo: "meta-inputmethod",
               key_id: "META_INPUTMETHOD",
             }
+          - {
+              src_repo: "https://codeberg.org/flk/meta-wayland.git",
+              dest_repo: "meta-wayland",
+              key_id: "META_wayland",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
