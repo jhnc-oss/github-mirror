@@ -231,6 +231,11 @@ jobs:
               dest_repo: "meta-wayland",
               key_id: "META_wayland",
             }
+          - {
+              src_repo: "https://git.yoctoproject.org/git/meta-arm.git",
+              dest_repo: "meta-arm",
+              key_id: "META_ARM",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
