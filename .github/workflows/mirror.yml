@@ -236,6 +236,11 @@ jobs:
               dest_repo: "meta-arm",
               key_id: "META_ARM",
             }
+          - {
+              src_repo: "https://github.com/CVEProject/cvelistV5.git",
+              dest_repo: "cvelistV5",
+              key_id: "CVELISTV5",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
