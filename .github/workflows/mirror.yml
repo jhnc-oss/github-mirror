@@ -241,6 +241,11 @@ jobs:
               dest_repo: "yocto-vex-check",
               key_id: "YOCTO_VEX_CHECK",
             }
+          - {
+              src_repo: "https://github.com/nxp-imx/uboot-imx.git",
+              dest_repo: "uboot-imx",
+              key_id: "UBOOT_IMX",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
