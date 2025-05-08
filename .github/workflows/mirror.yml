@@ -246,6 +246,11 @@ jobs:
               dest_repo: "uboot-imx",
               key_id: "UBOOT_IMX",
             }
+          - {
+              src_repo: "https://github.com/iris-GmbH/meta-cyclonedx.git",
+              dest_repo: "meta-cyclonedx",
+              key_id: "META_CYCLONEDX",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
