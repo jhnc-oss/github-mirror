@@ -255,6 +255,11 @@ jobs:
               dest_repo: "meta-cyclonedx",
               key_id: "META_CYCLONEDX",
             }
+          - {
+              src_repo: "https://github.com/coreboot/coreboot.git",
+              dest_repo: "coreboot",
+              key_id: "COREBOOT",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
