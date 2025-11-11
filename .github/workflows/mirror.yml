@@ -260,6 +260,11 @@ jobs:
               dest_repo: "coreboot",
               key_id: "COREBOOT",
             }
+          - {
+              src_repo: "https://github.com/SELinuxProject/refpolicy.git",
+              dest_repo: "refpolicy",
+              key_id: "REFPOLICY",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
