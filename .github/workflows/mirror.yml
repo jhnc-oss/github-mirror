@@ -265,6 +265,11 @@ jobs:
               dest_repo: "refpolicy",
               key_id: "REFPOLICY",
             }
+          - {
+              src_repo: "https://github.com/garmin/meta-lts-collab.git",
+              dest_repo: "meta-lts-collab",
+              key_id: "META_LTS_COLLAB",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
