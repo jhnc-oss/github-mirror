@@ -241,11 +241,6 @@ jobs:
               key_id: "CVELISTV5",
             }
           - {
-              src_repo: "https://gitlab.com/syslinbit/public/yocto-vex-check.git",
-              dest_repo: "yocto-vex-check",
-              key_id: "YOCTO_VEX_CHECK",
-            }
-          - {
               src_repo: "https://github.com/nxp-imx/uboot-imx.git",
               dest_repo: "uboot-imx",
               key_id: "UBOOT_IMX",
