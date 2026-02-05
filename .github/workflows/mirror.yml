@@ -280,6 +280,11 @@ jobs:
               dest_repo: "yocto-docs",
               key_id: "YOCTO_DOCS",
             }
+          - {
+              src_repo: "https://github.com/openembedded/bitbake.git",
+              dest_repo: "bitbake",
+              key_id: "BITBAKE",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
