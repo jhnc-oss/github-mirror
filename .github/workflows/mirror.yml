@@ -275,6 +275,11 @@ jobs:
               dest_repo: "meta-yocto",
               key_id: "META_YOCTO",
             }
+          - {
+              src_repo: "https://git.yoctoproject.org/yocto-docs",
+              dest_repo: "yocto-docs",
+              key_id: "YOCTO_DOCS",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
