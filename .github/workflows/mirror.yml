@@ -265,6 +265,21 @@ jobs:
               dest_repo: "meta-lts-collab",
               key_id: "META_LTS_COLLAB",
             }
+          - {
+              src_repo: "https://git.yoctoproject.org/meta-yocto",
+              dest_repo: "meta-yocto",
+              key_id: "META_YOCTO",
+            }
+          - {
+              src_repo: "https://git.yoctoproject.org/yocto-docs",
+              dest_repo: "yocto-docs",
+              key_id: "YOCTO_DOCS",
+            }
+          - {
+              src_repo: "https://github.com/openembedded/bitbake.git",
+              dest_repo: "bitbake",
+              key_id: "BITBAKE",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
