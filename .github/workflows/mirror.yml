@@ -270,6 +270,11 @@ jobs:
               dest_repo: "meta-lts-collab",
               key_id: "META_LTS_COLLAB",
             }
+          - {
+              src_repo: "https://git.yoctoproject.org/meta-yocto",
+              dest_repo: "meta-yocto",
+              key_id: "META_YOCTO",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
