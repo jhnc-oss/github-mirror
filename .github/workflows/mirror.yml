@@ -280,6 +280,11 @@ jobs:
               dest_repo: "bitbake",
               key_id: "BITBAKE",
             }
+          - {
+              src_repo: "https://github.com/SoftingIndustrial/FOSS.git",
+              dest_repo: "SoftingIndustrial-FOSS",
+              key_id: "SOFTINGINDUSTRIAL_FOSS",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
