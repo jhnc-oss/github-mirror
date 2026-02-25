@@ -266,6 +266,11 @@ jobs:
               key_id: "META_LTS_COLLAB",
             }
           - {
+              src_repo: "https://git.yoctoproject.org/meta-lts-mixins",
+              dest_repo: "meta-lts-mixins",
+              key_id: "META_LTS_MIXINS",
+            }
+          - {
               src_repo: "https://git.yoctoproject.org/meta-yocto",
               dest_repo: "meta-yocto",
               key_id: "META_YOCTO",
