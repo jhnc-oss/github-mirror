@@ -290,6 +290,11 @@ jobs:
               dest_repo: "SoftingIndustrial-FOSS",
               key_id: "SOFTINGINDUSTRIAL_FOSS",
             }
+          - {
+              src_repo: "https://github.com/sbabic/meta-swupdate.git",
+              dest_repo: "meta-swupdate",
+              key_id: "META_SWUPDATE",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
