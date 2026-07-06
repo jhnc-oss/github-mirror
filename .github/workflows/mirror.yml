@@ -36,7 +36,7 @@ jobs:
               key_id: "META_OPENEMBEDDED",
             }
           - {
-              src_repo: "https://git.yoctoproject.org/git/meta-mingw.git",
+              src_repo: "https://git.yoctoproject.org/meta-mingw",
               dest_repo: "meta-mingw",
               key_id: "META_MINGW",
             }
