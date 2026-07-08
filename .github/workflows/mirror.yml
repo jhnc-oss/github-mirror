@@ -41,12 +41,12 @@ jobs:
               key_id: "META_MINGW",
             }
           - {
-              src_repo: "https://git.yoctoproject.org/git/meta-selinux.git",
+              src_repo: "https://git.yoctoproject.org/meta-selinux",
               dest_repo: "meta-selinux",
               key_id: "META_SELINUX",
             }
           - {
-              src_repo: "https://git.yoctoproject.org/git/poky.git",
+              src_repo: "https://git.yoctoproject.org/poky",
               dest_repo: "poky",
               key_id: "POKY",
             }
@@ -86,7 +86,7 @@ jobs:
               key_id: "META_RUST",
             }
           - {
-              src_repo: "https://git.yoctoproject.org/git/meta-raspberrypi.git",
+              src_repo: "https://git.yoctoproject.org/meta-raspberrypi",
               dest_repo: "meta-raspberrypi",
               key_id: "META_RASPBERRYPI",
             }
@@ -121,7 +121,7 @@ jobs:
               key_id: "PLYMOUTH",
             }
           - {
-              src_repo: "https://git.yoctoproject.org/git/meta-intel.git",
+              src_repo: "https://git.yoctoproject.org/meta-intel",
               dest_repo: "meta-intel",
               key_id: "META_INTEL",
             }
@@ -161,12 +161,12 @@ jobs:
               key_id: "QUICKSCINTILLA",
             }
           - {
-              src_repo: "https://git.yoctoproject.org/git/meta-security.git",
+              src_repo: "https://git.yoctoproject.org/meta-security",
               dest_repo: "meta-security",
               key_id: "META_SECURITY",
             }
           - {
-              src_repo: "https://git.yoctoproject.org/git/yocto-kernel-cache.git",
+              src_repo: "https://git.yoctoproject.org/yocto-kernel-cache",
               dest_repo: "yocto-kernel-cache",
               key_id: "YOCTO_KERNEL_CACHE",
             }
@@ -231,7 +231,7 @@ jobs:
               key_id: "META_wayland",
             }
           - {
-              src_repo: "https://git.yoctoproject.org/git/meta-arm.git",
+              src_repo: "https://git.yoctoproject.org/meta-arm",
               dest_repo: "meta-arm",
               key_id: "META_ARM",
             }
