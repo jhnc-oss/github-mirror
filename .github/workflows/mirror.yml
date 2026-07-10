@@ -295,6 +295,11 @@ jobs:
               dest_repo: "meta-swupdate",
               key_id: "META_SWUPDATE",
             }
+          - {
+              src_repo: "https://github.com/CycloneDX/cyclonedx-rust-cargo.git",
+              dest_repo: "cyclonedx-rust-cargo",
+              key_id: "CARGO_CYCLONEDX",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
