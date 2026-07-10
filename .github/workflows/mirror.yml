@@ -17,7 +17,7 @@ jobs:
   mirror-repos:
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         mirror_config:
           - {
@@ -294,11 +294,6 @@ jobs:
               src_repo: "https://github.com/sbabic/meta-swupdate.git",
               dest_repo: "meta-swupdate",
               key_id: "META_SWUPDATE",
-            }
-          - {
-              src_repo: "https://github.com/CycloneDX/cyclonedx-rust-cargo",
-              dest_repo: "cyclonedx-rust-cargo",
-              key_id: "CARGO_CYCLONEDX",
             }
 
     name: ${{ matrix.mirror_config.dest_repo }}
