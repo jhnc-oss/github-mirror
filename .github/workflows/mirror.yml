@@ -306,6 +306,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
       - uses: wearerequired/git-mirror-action@6bbc55f2f0082bca533b72dc711f7d37154d40cc
+        if: env.SSH_KNOWN_HOSTS != ''
         env:
           SSH_PRIVATE_KEY: ${{ secrets[format('SSH_PRIVATE_KEY_{0}', matrix.mirror_config.key_id)] }}
           SSH_KNOWN_HOSTS: "${{ secrets.SSH_KNOWN_HOSTS }}"
