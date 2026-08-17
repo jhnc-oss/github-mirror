@@ -96,7 +96,7 @@ jobs:
               key_id: "OPCUA_ASYNCIO",
             }
           - {
-              src_repo: "https://sourceware.org/git/glibc.git",
+              src_repo: "https://forge.sourceware.org/glibc/glibc-mirror.git",
               dest_repo: "glibc",
               key_id: "GLIBC",
             }
