@@ -300,6 +300,11 @@ jobs:
               dest_repo: "cyclonedx-rust-cargo",
               key_id: "CARGO_CYCLONEDX",
             }
+          - {
+              src_repo: "https://github.com/fkie-cad/nvd-json-data-feeds.git",
+              dest_repo: "nvd-json-data-feeds",
+              key_id: "NVD_JSON_DATA_FEEDS",
+            }
 
     name: ${{ matrix.mirror_config.dest_repo }}
     steps:
