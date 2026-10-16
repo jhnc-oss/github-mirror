@@ -146,7 +146,7 @@ jobs:
               key_id: "CRATESIO_INDEX",
             }
           - {
-              src_repo: "https://invent.kde.org/packaging/yocto-meta-kf5.git",
+              src_repo: "https://github.com/KDE/yocto-meta-kf5.git",
               dest_repo: "yocto-meta-kf5",
               key_id: "YOCTO_META_KF5",
             }
