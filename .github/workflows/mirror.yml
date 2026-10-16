@@ -301,6 +301,9 @@ jobs:
               key_id: "CARGO_CYCLONEDX",
             }
           - {
+              src_repo: "https://github.com/nxp-imx/imx-sm.git",
+              dest_repo: "imx-sm",
+              key_id: "IMX_SM",
               src_repo: "https://github.com/fkie-cad/nvd-json-data-feeds.git",
               dest_repo: "nvd-json-data-feeds",
               key_id: "NVD_JSON_DATA_FEEDS",
