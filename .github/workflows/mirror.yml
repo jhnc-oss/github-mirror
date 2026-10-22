@@ -86,11 +86,6 @@ jobs:
               key_id: "META_RUST",
             }
           - {
-              src_repo: "https://git.yoctoproject.org/meta-raspberrypi",
-              dest_repo: "meta-raspberrypi",
-              key_id: "META_RASPBERRYPI",
-            }
-          - {
               src_repo: "https://github.com/FreeOpcUa/opcua-asyncio.git",
               dest_repo: "opcua-asyncio",
               key_id: "OPCUA_ASYNCIO",
